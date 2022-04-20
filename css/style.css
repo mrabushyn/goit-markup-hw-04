@@ -106,7 +106,20 @@ img {display: block;}
     font-style: normal;
     color: var(--secondary-color);
     padding-top: 32px;
-    padding-bottom: 32px;     
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+}
+
+.header-soc-icon {
+    margin-right: 10px;
+    fill: var(--secondary-color);
+}   
+
+.contacts-link:hover .header-soc-icon,
+.contacts-link:focus .header-soc-icon {
+    fill: var(--brend-color);
 }
 
 .contacts-item:not(:last-child) {
@@ -118,6 +131,7 @@ img {display: block;}
 .menu-link:focus,
 .contacts-link:focus {
     color: var(--brend-color);
+    
 }
 
 .current {

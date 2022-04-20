@@ -5,6 +5,7 @@
     --backgrd-color: #f5f4fa;
     --light-color: #ffffff;
     --brand-bg-color: #188ce8;
+    --icons-master-color: #AFB1B8;
     --padding-94: 94px;
     --margin-30: 30px;
     --pading-32: 32px;
@@ -326,7 +327,7 @@ img {
     width: 44px;
     height: 44px;
     padding: 12px;
-    background-color: var(--backgrd-color);
+    background-color: var(--light-color);
     border-radius: 50%;
     margin-bottom: var(--margin-30);
 }
@@ -334,6 +335,21 @@ img {
 .masters-soc-item:not(:last-child) {
     margin-right: var(--margin-10);
 }
+
+.masters-soc-icon {
+    fill: var(--icons-master-color);
+}
+
+.masters-soc-item:hover,
+.masters-soc-item:focus {
+    background-color: var(--brend-color);
+}
+
+.masters-soc-item:hover .masters-soc-icon,
+.masters-soc-item:focus .masters-soc-icon {
+    fill: var(--light-color);
+}
+
 /* ----------------------------------------FOOTER---------------------------------------- */
 .footer-section {
     background: #2f303a;

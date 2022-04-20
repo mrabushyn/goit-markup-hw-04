@@ -6,6 +6,9 @@
     --light-color: #ffffff;
     --brand-bg-color: #188ce8;
     --padding-94: 94px;
+    --margin-30: 30px;
+    --pading-32: 32px;
+    --margin-10: 10px;
 }
 
 body {
@@ -99,8 +102,8 @@ img {
 }
 
 .menu-link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: var(--pading-32);
+    padding-bottom: var(--pading-32);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -116,8 +119,8 @@ img {
     text-decoration-line: none;
     font-style: normal;
     color: var(--secondary-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: var(--pading-32);
+    padding-bottom: var(--pading-32);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,12 +211,26 @@ img {
     margin-bottom: -1px;
 }
 
+.about-soc-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+.about-soc-item {
+    padding: 25px 100px;
+    background-color: var(--backgrd-color);
+    border-radius: 4px;
+    margin-bottom: var(--margin-30);
+}
+
+
 .about-list {
     display: flex;
 }
 
 .about-list-margin:not(:last-child) {
-    margin-right: 30px;
+    margin-right: var(--margin-30);
 }
 
 .about-list-title {
@@ -222,7 +239,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: var(--margin-10);
 }
 
 .about-list-item {
@@ -253,7 +270,7 @@ img {
 
 .about-img {
     flex-basis: calc(100% / 3-30px);
-    margin-left: 30px;
+    margin-left: var(--margin-30);
 }
 
 /* ---------------------------------------MASTERS--------------------------------------------- */
@@ -269,7 +286,7 @@ img {
 
 .masters-photo {
     flex-basis: calc(100% / 2-30px);
-    margin-left: 30px;
+    margin-left: var(--margin-30);
     background: var(--light-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -277,8 +294,8 @@ img {
 }
 
 .masters-name {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: var(--margin-30);
+    padding-bottom: var(--margin-30);
 }
 
 .masters-list {
@@ -287,7 +304,7 @@ img {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 10px;
+    margin-bottom: var(--margin-10);
 }
 
 .proffesion {
@@ -296,6 +313,26 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+    margin-bottom: 16px;
+}
+
+.masters-soc-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+.masters-soc-item {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    background-color: var(--backgrd-color);
+    border-radius: 50%;
+    margin-bottom: var(--margin-30);
+}
+
+.masters-soc-item:not(:last-child) {
+    margin-right: var(--margin-10);
 }
 /* ----------------------------------------FOOTER---------------------------------------- */
 .footer-section {
@@ -373,8 +410,8 @@ img {
 
 .pf-item-box {
     flex-basis: calc((100%-90)-30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: var(--margin-30);
+    margin-bottom: var(--margin-30);
 }
 
 .pf-item-box:nth-child(1n + 7) {
